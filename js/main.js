@@ -3,7 +3,7 @@
 const jsHamburger = document.getElementById('js-hamburger');
 const Body = document.body;
 // const jsGlobalMenu = document.getElementById('js-global-menu');
-const hamburgerList = document.querySelector('.c-hamburger')
+const hamburgerList = document.getElementById('c-hamburger')
 jsHamburger.addEventListener('click', function(){
     // Body
     if (this.getAttribute('aria-expanded') == 'false') {
