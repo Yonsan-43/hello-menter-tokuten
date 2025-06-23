@@ -1508,14 +1508,15 @@ top > story
 @media (min-width: 1200px) {
     .top-story-body{
         padding: 112px 40px 112px 80px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .top-story-body{
         width: 50%;
         gap: 82px;
         justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1400px) {
+    .top-story-body{
+        padding: 112px 80px;
     }
 }
 .top-story-body-title span{
@@ -1531,6 +1532,23 @@ top > story
         font-size: 108px;
     }
 }
+@media (min-width: 768px) {
+    .top-story-body-title{
+        margin-inline: auto;
+        width: 500px;
+    }
+}
+@media (min-width: 1600px) {
+    .top-story-body-title{
+        margin-inline-start: 10%;
+        width: fit-content;
+    }
+}
+@media (min-width: 3000px) {
+    .top-story-body-title{
+        margin-inline: auto;
+    }
+}
 .top-story-body-text {
     display: flex;
     flex-direction: column;
@@ -1539,13 +1557,30 @@ top > story
     font-size: 15px;
     line-height: 2;
     letter-spacing: 0.1em;
+    max-width: 500px;
 }
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
     .top-story-body-text{
         font-size: 16px;
         line-height: 2.5;
+        margin-inline: auto;
     }
-
+}
+@media (min-width: 1200px) {
+    .top-story-body-text{
+        margin-inline: initial;
+    }
+}
+@media (min-width: 1600px) {
+    .top-story-body-text{
+        max-width: 90%;
+        margin-inline-start: 10%;
+    }
+}
+@media (min-width: 3000px) {
+    .top-story-body-text{
+        margin-inline: auto;
+    }
 }
 .top-story-body-text01 span{
     display: inline;
@@ -1556,10 +1591,10 @@ top > story
 }
 @media (min-width: 1300px) {
     .top-story-body-text01 span{
-        display: inline-block;
+        display: block;
     }
     .top-story-body-text02 span{
-        display: inline-block;
+        display: block;
     }
 }
 .top-story-bgImg {
@@ -1584,6 +1619,12 @@ top > story
     .top-story-bgImg {
         background-size: 220% auto;
         background-position: -332px 0;
+    }
+}
+@media (min-width: 2000px) {
+    .top-story-bgImg{
+        background-size: cover;
+        background-position: center left;
     }
 }
 .top-story-bgImg::before{
@@ -1614,6 +1655,18 @@ top > story
     z-index: 2;
     justify-content: flex-end;
     height: 100%;
+}
+@media (min-width: 768px) {
+    .top-story-bgImg-text{
+        max-width: 480px;
+        margin-inline: auto;
+    }
+}
+@media (min-width: 2000px) {
+    .top-story-bgImg-text{
+        max-width: 80%;
+        margin-inline: auto;
+    }
 }
 .top-story-bgImg-text span{
     display: inline-block;
