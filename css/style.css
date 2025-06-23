@@ -1029,7 +1029,7 @@ layout > header
 .l-header {
     /* position: relative; */
     width: 80px;
-    height: 800px;
+    height: 100%;
     position: absolute;
     right: 0;
     padding-bottom: 40px;
@@ -1293,7 +1293,7 @@ page > top > top-fv
 */
 .top-fv {
     width: 100vw;
-    height: 800px;
+    height: 100vh;
     background-image: url('../img/fv-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
